@@ -377,7 +377,7 @@ textarea {
 
 }
 
-#textareas {
+.textareas div {
   display: flex;
   flex-direction: column;
   margin-right: 15px;
@@ -385,7 +385,7 @@ textarea {
   color: black;
 }
 
-#textareas textarea {
+.textareas textarea {
   outline: none;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.548);
@@ -395,8 +395,8 @@ textarea {
   transition: all .3s ease-out;
 }
 
-#textareas textarea:focus+label,
-#textareas textarea:valid+label {
+.textareas textarea:focus+label,
+.textareas textarea:valid+label {
   font-size: 11.5px;
   margin-top: 39px;
 }
@@ -471,6 +471,21 @@ textarea {
   z-index: 4;
 }
 
+.card-detalhes{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 500px;
+  width: 80%;
+  margin-top:  15px;
+  margin-left: 15px;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 4;
+}
+
 .card label, .label-card {
   margin-bottom: 5px;
 }
@@ -483,14 +498,27 @@ textarea {
 
 }
 
-.label-card label{
+.label-card-detalhes{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  gap: 3px
+}
+
+.label-detalhes {
+  margin-bottom: 30px;
+}
+
+.label-card label, .label-card-detalhes label{
   margin-right: 50px;
   /* display: flex;
   justify-content: space-between; */
 }
 
+
 .cards-btn a{
-  width: 20% ;
+  width: 18% ;
     
 }
 

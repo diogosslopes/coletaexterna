@@ -3,12 +3,12 @@ import Button from './Button'
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
 
-function Card(props) {
+function CardRealizadas(props) {
 
-  const [coletas, setColetas] = useState(JSON.parse(localStorage.getItem("coletasAgendadas")))
+  const [coletas, setColetas] = useState(JSON.parse(localStorage.getItem("coletasFinalizadas")))
 
   if (coletas == null) {
-    localStorage.setItem("coletasAgendadas", "[]")
+    localStorage.setItem("coletasFinalizadas", "[]")
 
   }
 
@@ -35,8 +35,7 @@ function Card(props) {
               <div className='buttons cards-btn'>
                 <Link to={'/cadacoleta'} ><Button buttonName='Editar' /></Link>
                 <Link to={'/coletasagendadas'} reloadDocument="true" ><Button buttonName='Finalizar' tipo="finalizar" idcoleta={c.idColeta} /></Link>
-                <Link to={'/coletasagendadas'} reloadDocument="true" ><Button buttonName='Excluir' tipo="delete" idcoleta={c.idColeta} /></Link>
-                <Link to={`/coleta/${c.idColeta}`}><Button buttonName='Detalhes' tipo="detalhe" idcoleta={c.idColeta} /></Link>
+                <Link to={`/coletar/${c.idColeta}`}><Button buttonName='Detalhes' tipo="detalhe" idcoleta={c.idColeta} /></Link>
                 <a target='_blank' href={`https://google.com/maps/search/${c.street} ${c.number} ${c.bairro} ${c.city}`} rel='external'><Button buttonName='Ver no mapa' /></a>
               </div>
             </div>
@@ -51,4 +50,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default CardRealizadas;

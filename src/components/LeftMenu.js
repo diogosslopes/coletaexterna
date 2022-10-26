@@ -11,8 +11,8 @@ function LeftMenu() {
     </div>
     <div className='buttons'>
       <Link to={'/cadacoleta'}><Button buttonName = "Cadastrar Coleta" /></Link>
-      <Link to={'/coletasagendadas'}><Button buttonName = "Coletas Agendadas" /></Link>
-      <Link to={'/coletasrealizadas'}><Button buttonName = "Coletas Realizadas" /></Link>
+      <Link to={'/coletasagendadas'}><Button tipo = "agendadas" buttonName = "Coletas Agendadas" /></Link>
+      <Link to={'/coletasrealizadas'}><Button tipo = "realizadas" buttonName = "Coletas Realizadas" /></Link>
       <Link to={'/'}><Button buttonName = "Sair" /></Link>
     </div>
    </div>

@@ -1,6 +1,8 @@
 import './../App.css';
 import Header from '../components/Header';
 import LeftMenu from '../components/LeftMenu';
+import RightMenu from '../components/RightMenu'
+import RightMenuRealizadas from '../components/RightMenuRealizadas';
 
 function ColetasRealizdas() {
   return (
@@ -8,8 +10,7 @@ function ColetasRealizdas() {
       <Header title="Coletas Realizadas" />
       <div className='container'>
         <LeftMenu />
-        <div className='right-menu'>
-        </div>
+        <RightMenuRealizadas />
       </div>
     </div>
   );
