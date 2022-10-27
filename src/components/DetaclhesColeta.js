@@ -22,10 +22,10 @@ function DetalhesColeta(props) {
           </div>
           <div className='label-card-detalhes'>
             <label><strong>Paciente acamado:</strong> {coleta.convenio}</label>
-            <label><strong>Paciente agitado:</strong> {coleta.convenio}</label>
-            <label><strong>Auxilio para coletora:</strong> {coleta.convenio}</label>
-            <label><strong>Possui alguma doença:</strong> {coleta.convenio}</label>
-            <label><strong>Observações:</strong> {coleta.convenio}</label>
+            <label><strong>Paciente agitado:</strong> {coleta.agitado}</label>
+            <label><strong>Auxilio para coletora:</strong> {coleta.auxilio }</label>
+            <label><strong>Possui alguma doença:</strong> {coleta.doenca}</label>
+            <label><strong>Observações:</strong> {coleta.obs}</label>
           </div>
           <div className='llabel-card-detalhes'>
             <label><strong>Convenio:</strong> {coleta.convenio}</label>

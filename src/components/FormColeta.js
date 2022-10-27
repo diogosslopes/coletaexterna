@@ -62,7 +62,7 @@ function FormColeta() {
   const [status, setStatus] = useState("agendada")
   
   let coleta = {
-    idColeta: coletas.length,
+    idColeta: Math.floor(Math.random() * 99999999),
     date: date,
     time: time,
     saida: saida,
