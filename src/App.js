@@ -9,6 +9,6 @@ function App() {
      <AppRoutes />
    </main>
   );
-}
+  }
 
 export default App;

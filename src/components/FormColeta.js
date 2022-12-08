@@ -4,9 +4,11 @@ import Button from './Button';
 import { Link } from 'react-router-dom'
 // import InputsCad from './InputsCad';
 
-function FormColeta() {
+function FormColeta(props) {
 
- 
+  console.log(props.tipo)
+
+
   const coletas = JSON.parse(localStorage.getItem("coletasAgendadas"))
  
   useEffect(()=>{
@@ -31,10 +33,7 @@ function FormColeta() {
     setStreet(endCompleto.logradouro)
     setCity(endCompleto.localidade)
     setBairro(endCompleto.bairro)
-    
-
 }
-  
 
   const [date, setDate] = useState()
   const [time, setTime] = useState()
@@ -60,6 +59,10 @@ function FormColeta() {
   const [doenca, setDoenca] = useState()
   const [obs, setObs] = useState()
   const [status, setStatus] = useState("agendada")
+
+  if(props.tipo === 'editar'){
+    // setName(props.coleta.name)
+  }
   
   let coleta = {
     idColeta: Math.floor(Math.random() * 99999999),
@@ -88,6 +91,9 @@ function FormColeta() {
     obs: obs,
     status: status
   }
+
+
+ 
 
   const sumTotal = () =>{
     let newTotal = valor + taxa

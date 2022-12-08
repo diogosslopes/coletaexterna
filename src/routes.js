@@ -6,6 +6,7 @@ import CadColeta from './pages/CadColeta'
 import ColetasRealizadas from './pages/ColetasRealizdas'
 import DetalhesColetasCad from './pages/DetalhesColetasCad'
 import DetalhesColetasRealizadas from './pages/DetalhesColetasRealizadas.js';
+import EditColeta from './pages/EditColeta.js';
 
 function AppRoutes() {
   return (
@@ -18,6 +19,7 @@ function AppRoutes() {
             <Route path="/coletasrealizadas" element={ <ColetasRealizadas /> } />
             <Route path="/coletar/:id" element={ <DetalhesColetasRealizadas /> }/>
             <Route path="/signin" element={ <Signin /> } />
+            <Route path="/editcoleta/:id" element={ <EditColeta /> } />
         </Routes>
     </BrowserRouter>
   );
