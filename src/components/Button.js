@@ -23,6 +23,13 @@ function Button(props) {
     localStorage.setItem("coletasFinalizadas", JSON.stringify(coletasRealizadas))
     console.log('finalizado')
     console.log(filterColetasRealizadas)
+  }else if(props.tipo === "editar"){
+    const filterColetas = coletas.filter((c) => props.coleta.idColeta !== c.idColeta)
+    console.log(props.coleta.idColeta)
+    console.log(filterColetas)
+    localStorage.setItem("coletasAgendadas", JSON.stringify(filterColetas))
+    coletas.push(props.coleta)
+    localStorage.setItem("coletasAgendadas", JSON.stringify(coletas))
   }
  }
 

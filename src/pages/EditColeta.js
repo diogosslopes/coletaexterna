@@ -243,7 +243,7 @@ let editedColeta = {
           <div className=''>
             <div className='buttons right-buttons'>
               {/* <Link to={""}><button className='button'  onClick={saveColeta} name={name}>Salvar</button></Link> */}
-              <Link to={"/coletasagendadas"}><Button buttonName="Salvar" tipo="save" coleta={editedColeta} /></Link>
+              <Link to={"/coletasagendadas"}><Button buttonName="Salvar" tipo="editar" coleta={editedColeta} /></Link>
               <Link to={"/coletasagendadas"}><Button buttonName="Cancelar" /></Link>
               <Link to={""}><Button buttonName="Limpar" /></Link>
             </div>

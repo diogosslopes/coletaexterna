@@ -33,7 +33,7 @@ function Card(props) {
                 <label><strong>Total:</strong> {`R$ ${c.total}`}</label>
               </div>
               <div className='buttons cards-btn'>
-                <Link to={`/editcoleta/${c.idColeta}`} ><Button buttonName='Editar' tipo="editar" idcoleta={c.idColeta} /></Link>
+                <Link to={`/editcoleta/${c.idColeta}`} ><Button buttonName='Editar' tipo="" idcoleta={c.idColeta} /></Link>
                 <Link to={'/coletasagendadas'} reloadDocument="true" ><Button buttonName='Finalizar' tipo="finalizar" idcoleta={c.idColeta} /></Link>
                 <Link to={'/coletasagendadas'} reloadDocument="true" ><Button buttonName='Excluir' tipo="delete" idcoleta={c.idColeta} /></Link>
                 <Link to={`/coleta/${c.idColeta}`}><Button buttonName='Detalhes' tipo="detalhe" idcoleta={c.idColeta} /></Link>
